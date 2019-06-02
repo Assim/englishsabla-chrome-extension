@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://englishsabla/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay >
+<overlay id="englishsabla-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://englishsabla/content/resources/js/englishsabla.js" />
+
+<!-- Firefox -->
+<statusbar id="status-bar">
+	<statusbarpanel	id="englishsabla-status-bar-image" context="englishsabla-status-bar-menu">
+		<image id="englishsabla-status-bar-img"
+			onload="englishsabla.init();"
+			onclick="englishsabla.show_popup();"
+		/>
+	</statusbarpanel>
+</statusbar>
+
+</overlay>

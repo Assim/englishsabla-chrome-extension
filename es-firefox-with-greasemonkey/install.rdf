@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+
+    <em:id>englishsabla@englishsabla.com</em:id>
+    <em:version>1.0</em:version>
+    <em:type>2</em:type>
+
+    <!-- Front End Metadata -->
+
+    <em:name>English Sabla</em:name>
+    <em:description>The official Firefox extension of English Sabla. Get the latest activity from the website and customise your browsing experience.</em:description>
+    <em:creator>Assim</em:creator>
+    <em:contributor>NaBHaN</em:contributor>
+    <em:optionsURL>chrome://englishsabla/content/resources/html/customise.html</em:optionsURL>
+    <em:iconURL>chrome://englishsabla/skin/icon.gif</em:iconURL>
+    <em:homepageURL>http://www.englishsabla.com</em:homepageURL>
+
+    <!-- Describe the Firefox versions we support -->
+
+    <em:targetApplication>
+      <Description>
+      	<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.5</em:minVersion>
+        <em:maxVersion>3.6.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+  </Description>
+
+</RDF>

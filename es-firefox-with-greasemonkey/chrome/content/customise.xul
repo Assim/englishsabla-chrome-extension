@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"  type="text/css"?>
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+        title="English Sabla"
+        width="450"
+        height="550">
+
+<hbox align="center">
+
+  <iframe src="chrome://englishsabla/content/resources/html/customise.html" flex="2" id="browserTable" name="table_frame" width="450" height="550"/>
+
+</hbox>
+
+</window>

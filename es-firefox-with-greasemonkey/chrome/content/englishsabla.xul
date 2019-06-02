@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://englishsabla/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay >
+<overlay id="englishsabla-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://englishsabla/content/resources/js/englishsabla.js" />
+
+<!-- Mozilla Tools menu -->
+<menupopup id="taskPopup">
+	<menuitem id="englishsabla-menu-preferences" oncommand="englishsabla.show_popup();"/>
+</menupopup>
+
+<!-- Firefox Tools menu -->
+<menupopup id="menu_ToolsPopup">
+	<menu id="englishsabla_tools_menu" label="English Sabla">
+		<menupopup id="englishsabla_menupopup">
+			<menuitem label="Open Popup" id="englishsabla-menu-popup" oncommand="englishsabla.show_popup();"/>
+			<menuitem label="Customise" id="englishsabla-menu-preferences" oncommand="englishsabla.show_customise();"/>
+		</menupopup>
+	</menu>
+</menupopup>
+
+<!-- Status Bar -->
+<statusbar id="status-bar">
+	<statusbarpanel	id="englishsabla-status-bar-image" context="englishsabla-status-bar-menu">
+		<image id="englishsabla-status-bar-img"
+			onload="englishsabla.init();"
+			onclick="englishsabla.show_popup();"
+		/>
+	</statusbarpanel>
+</statusbar>
+
+</overlay>

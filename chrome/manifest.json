@@ -1,0 +1,26 @@
+{
+  "name": "English Sabla",
+  "version": "1.0.1",
+  "description": "The official Chrome extension of English Sabla. Get the latest activity from the website and customise your browsing experience.",
+  "background_page": "html/background.html",
+  "options_page": "html/customise.html",
+  "browser_action": {
+    "default_icon": "images/icons/icon.gif",
+    "popup": "html/popup.html"
+  },
+  "icons": {
+    "16": "images/icons/icon.gif",
+    "48": "images/icons/icon.gif",
+    "128": "images/icons/icon.gif"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.englishsabla.com/*"],
+      "css": ["css/content_script.css"],
+      "js": ["js/jquery.js", "js/content_script.js"]
+    }
+  ],
+  "permissions": [
+    "http://www.englishsabla.com/"
+  ]
+}

@@ -1,0 +1,6 @@
+Lazy load
+Put image reload for broken links:
+http://davidwalsh.name/custom-missing-image-jquery
+Context menu for something
+Smooth(animated) page scroll
+Resize page when resizing windows

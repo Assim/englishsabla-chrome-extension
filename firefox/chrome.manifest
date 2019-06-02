@@ -1,0 +1,7 @@
+content englishsabla chrome/content/
+content	englishsabla chrome/content/ contentaccessible=yes
+
+overlay	chrome://browser/content/browser.xul chrome://englishsabla/content/englishsabla.xul
+overlay chrome://navigator/content/navigator.xul chrome://englishsabla/content/englishsabla.xul
+
+skin englishsabla classic/1.0 skin/

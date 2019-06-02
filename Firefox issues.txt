@@ -1,0 +1,3 @@
+- Make "Customise" link work
+- Open links in new tabs instead of new window
+- "Customise" link shows more than once based on number of ES tabs opened.

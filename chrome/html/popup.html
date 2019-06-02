@@ -1,0 +1,179 @@
+<html>
+<!--
+/*!
+ * English Sabla Google Chrome Extension
+ * http://englishsabla.com/
+ *
+ * Copyright 2010, Assim Al-Marhuby
+ * http://assim.me/
+ */
+-->
+<head>
+
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+  <tbody><!-- content table --> 
+    <td> 
+      <table border="0" cellpadding="0" cellspacing="0" height="66"> 
+        <tbody> 
+         <table width="100%" border="0" cellpadding="0" cellspacing="0" height="66"> 
+        <tbody> 
+        <tr> 
+          <td width="250"><a href="http://www.englishsabla.com/forum" target="_blank"><img src="../images/theme/header_leftv2.gif" width="250" border="0" height="66"></a></td> 
+          <td background="../images/theme/header_extendv2.gif">&nbsp;</td> 
+          <td width="170"><img src="../images/theme/header_rightv2.gif" width="170" height="66"></td> 
+        </tr></tbody></table> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0"> 
+        <tbody> 
+        <tr> 
+          <td width="18" background="../images/theme/left_borderv2.gif"><img src="../images/theme/left_borderv2.gif" width="18" height="8"></td> 
+          <td bgcolor="#ffffff" class="smallfont"><!-- /logo -->
+
+<!-- content table --> 
+<!-- open content container --> 
+ 
+<div align="center"> 
+	<div class="page" style="width:100%; text-align:left"> 
+		<div style="padding:0px 25px 0px 25px" align="left">
+
+
+<!-- nav buttons bar --> 
+<div class="tborder" style="padding:1px; border-top-width:0px"> 
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center"> 
+<tr align="center">
+<td class="vbmenu_control"><a href="#" id="posts_link">Forum Activity</a></td>
+<td class="vbmenu_control"><a href="#" id="news_link">News</a></td>
+<td class="vbmenu_control"><a href="#" id="customise_link">Customise</a></td>
+<td class="vbmenu_control"><a href="#" id="information_link">Information</a></td>
+</tr>
+</table>
+</div>
+<!-- / nav buttons bar -->
+
+<!-- Forum Activity -->
+<div id="posts_content" style="display:none;">
+<br /><b><u>Latest Posts</u></b> (<img src="../images/icons/arrow_turn_right.png"><a href="#" id="threads_link">Latest Threads</a>)<br /><br />
+<script src="http://www.englishsabla.com/forum/external.php?type=js&lastpost=true" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+var pos = 1;
+for (i in threads)
+{
+document.writeln(pos + "- <a target=_blank title=\"Lastest post on thread by " + threads[i].poster + " on " + threads[i].threaddate + " at " + threads[i].threadtime + "\" href=http://www.englishsabla.com/forum/showthread.php?t=" + threads[i].threadid + ">" + threads[i].title + "</a><br />");
+pos++;
+}
+//-->
+</script>
+<br />
+<center><a href="http://www.englishsabla.com/forum/search.php?do=getnew" target="_blank"><b>Search New Posts</b></a></center>
+</div>
+
+<div id="threads_content" style="display:none;">
+<br /><b><u>Latest Threads</u></b> (<img src="../images/icons/arrow_turn_right.png"><a href="#" id="posts_link">Latest Posts</a>)<br /><br />
+<script src="http://www.englishsabla.com/forum/external.php?type=js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+var pos = 1;
+for (i in threads)
+{
+document.writeln(pos + "- <a target=\"_blank\" title=\"Thread created by " + threads[i].poster + " on " + threads[i].threaddate + " at " + threads[i].threadtime + "\" href=http://www.englishsabla.com/forum/showthread.php?t=" + threads[i].threadid + ">" + threads[i].title + "</a><br />");
+pos++;
+}
+//-->
+</script>
+<br />
+<center><a href="http://www.englishsabla.com/forum/search.php?do=getnew" target="_blank"><b>Search New Posts</b></a></center>
+</div>
+<!-- / Forum Activity -->
+
+<!-- News -->
+<div id="news_content" style="display:none;">
+<br /><b><u>News</u></b><br /><br />
+<script src="http://www.englishsabla.com/forum/external.php?type=js&forumids=49" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+var pos = 1;
+for (i in threads)
+{
+document.writeln(pos + "- <a target=\"_blank\" title=\"News posted by " + threads[i].poster + " on " + threads[i].threaddate + " at " + threads[i].threadtime + "\" href=http://www.englishsabla.com/forum/showthread.php?t=" + threads[i].threadid + ">" + threads[i].title + "</a><br />");
+pos++;
+}
+//-->
+</script>
+<br />
+<center><a href="http://www.englishsabla.com/forum/forumdisplay.php?f=49" target="_blank"><b>Sabla News and Events Archive</b></a><center>
+</div>
+<!-- / News -->
+
+<!-- Customise -->
+<div id="customise_content" style="display:none;">
+<br /><b><u>Customise</u></b><br /><br />
+You will be able to customise your browsing experience at English Sabla. You may hide unwanted elements or change the appearance of some elements on English Sabla.<br />
+<br />
+A "Customise" link is also added on the English Sabla navigation bar, you will be able to modify your customisation settings at any time by clicking it from there or directly accessing it from the link at the bottom. Alternatively, you may also right-click the English Sabla extension logo on top and select "Options".
+<br />
+<br />
+<center><b><a href="customise.html" target="_blank">Visit Customise Page</a></b></center>
+
+</div>
+<!-- / Customise -->
+
+<!-- Information -->
+<div id="information_content" style="display:none;">
+<br /><b><u>Information</u></b><br /><br />
+Extension Developer: <b><a href="http://www.englishsabla.com/forum/member.php?u=3157" target="_blank">Assim</a></b>
+<br />Graphics Designer: <b><a href="http://www.englishsabla.com/forum/member.php?u=851" target="_blank">NaBHaN</a></b>
+<br /><br />
+<table align="center" border="0" width="325"> 
+              <tbody> 
+		<tr> 
+                <th scope="col"><a target="_blank" href="http://www.englishsabla.com/forum/showthread.php?t=10916"><img src="../images/icons/rules.gif" border="0" height="50" width="50"></a></th> 
+                <th scope="col"><a target="_blank" href="http://www.englishsabla.com/forum/showthread.php?t=44494"><img src="../images/icons/history.gif" border="0" height="50" width="50"></a></th> 
+                <th scope="col"><a target="_blank" href="http://www.englishsabla.com/forum/misc.php?do=topposters"><img src="../images/icons/topposters.gif" border="0" height="50" width="50"></a></th> 
+		<th scope="col"><a target="_blank" href="http://twitter.com/englishsabla"><img src="../images/icons/twitter.gif" border="0" height="50" width="50"></a></th> 
+                <th scope="col"><a target="_blank" href="http://www.facebook.com/pages/English-Sabla/46315848075"><img src="../images/icons/facebook.gif" border="0" height="50" width="50"></a></th></tr> 
+              </tbody> 
+</table>
+
+</div>
+<!-- / Information -->
+
+
+		</div> 
+	</div> 
+</div> 
+ 
+<!-- / close content container --> 
+<!-- /content area table -->
+
+  </td> 
+<td width="17" background="../images/theme/right_borderv2.gif"><img src="../images/theme/right_borderv2.gif" width="17" height="6"></td> 
+        </tr></tbody></table></td></tr> 
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0"> 
+        <tbody> 
+        <tr> 
+          <td width="53"><img src="../images/theme/footer_leftv2.gif" width="53" height="55"></td> 
+          <td background="../images/theme/footer_extendv2.gif">&nbsp;</td> 
+          <td width="171"><img src="../images/theme/footer_rightv2.gif" width="171" height="55"></td> 
+        </tr> 
+        </tbody> 
+      </table> 
+     </td> 
+   </tr> 
+ 
+</tr></table></td> 
+ <center><font size="1">Extension developed and maintained by: <b><a target="_blank" href="http://www.englishsabla.com/forum/member.php?u=3157">Assim</a></b>
+</tbody></table>
+
+</body>
+
+</html>

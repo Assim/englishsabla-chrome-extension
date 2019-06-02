@@ -1,0 +1,39 @@
+<html>
+<!--
+/*!
+ * English Sabla Google Chrome Extension
+ * http://englishsabla.com/
+ *
+ * Copyright 2010, Assim Al-Marhuby
+ * http://assim.me/
+ */
+-->
+<script>
+// Send localStorage options to content script if requested
+chrome.extension.onRequest.addListener(
+	function(request, sender, sendResponse)
+	{
+		switch (request.name)
+		{
+			case "getPreferences":
+			// Request from the content script to get the preferences.
+			sendResponse(
+			{
+				es_intro                                    : localStorage["es_intro"],
+				esoption_username                           : localStorage["esoption_username"],
+				esoption_thread_resize_post_images          : localStorage["esoption_thread_resize_post_images"],
+				esoption_thread_resize_post_images_size     : localStorage["esoption_thread_resize_post_images_size"],
+				esoption_thread_post_font                   : localStorage["esoption_thread_post_font"],
+				esoption_thread_post_font_max_size          : localStorage["esoption_thread_post_font_max_size"],
+				esoption_thread_post_font_default_color     : localStorage["esoption_thread_post_font_default_color"],
+				esoption_thread_post_no_right_align         : localStorage["esoption_thread_post_no_right_align"],
+				esoption_forum_fluid_style                  : localStorage["esoption_forum_fluid_style"],
+				esoption_forum_categories                   : localStorage["esoption_forum_categories"],
+				esoption_thread_signatures                  : localStorage["esoption_thread_signatures"],
+			});
+			break;
+		}
+	}
+);
+</script>
+</html>
